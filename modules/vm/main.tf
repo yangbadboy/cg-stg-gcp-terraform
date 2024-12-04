@@ -37,7 +37,7 @@ locals {
 
 resource "google_compute_address" "bastion_static_ip" {
   count   = var.assign_static_ip ? 1 : 0
-  name   = "bastion-static-ip"
+  name   = "bastion-static-ip-yang"
   region = var.region
   project = var.project
 }

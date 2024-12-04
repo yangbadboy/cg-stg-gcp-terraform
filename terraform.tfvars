@@ -1,26 +1,26 @@
-network_name = "cg-stg-gcp-vpc"
+network_name = "cg-stg-gcp-vpc-yang"
 project_id   = "gamehub-stg1"
 mtu = 1460
 region = "us-central1"
 zone   = "us-central1-a"
-bastion_name = "cg-stg-gcp-bastion"
-service_account_name_bastion = "cg-stg-gcp-sa-bastion"
+bastion_name = "cg-stg-gcp-bastion-yang"
+service_account_name_bastion = "cg-stg-gcp-sa-bastion-yang"
 tags_bastion = ["bastion", "iap-access", "http-server", "https-server", "glb-class0", "glb-class1"]
 subnets = [
   {
-    subnet_name                      = "cg-stg-public-subnet-1"
+    subnet_name                      = "cg-stg-public-subnet-1-yang"
     subnet_ip                        = "10.0.2.0/24"
     subnet_region                    = "us-central1"
     # Các trường không cần thiết có thể bỏ qua vì sẽ sử dụng giá trị mặc định
   },
   {
-    subnet_name                      = "cg-stg-public-subnet-2"
+    subnet_name                      = "cg-stg-public-subnet-2-yang"
     subnet_ip                        = "10.0.3.0/24"
     subnet_region                    = "us-central1"
     # Các trường không cần thiết có thể bỏ qua vì sẽ sử dụng giá trị mặc định
   },
   {
-    subnet_name                      = "cg-stg-bastion-subnet"
+    subnet_name                      = "cg-stg-bastion-subnet-yang"
     subnet_ip                        = "10.0.4.0/24"
     subnet_region                    = "us-central1"
     # Các trường không cần thiết có thể bỏ qua vì sẽ sử dụng giá trị mặc định
