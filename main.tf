@@ -95,7 +95,7 @@ module "vm" {
   #service_account_email     = "bastion@gamehub-stg1.iam.gserviceaccount.com"
   service_account_name      = var.service_account_name_bastion
   machine_type              = "n1-standard-1"
-  subnet                    = "cg-stg-bastion-subnet"
+  subnet                    = var.subnet_bastion
   region                    = var.region
   network                   = module.vpc.network_name 
   external_ip               = true

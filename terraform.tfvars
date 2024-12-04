@@ -3,6 +3,7 @@ project_id   = "gamehub-stg1"
 mtu = 1460
 region = "us-central1"
 zone   = "us-central1-a"
+subnet_bastion = "cg-stg-bastion-subnet-yang"
 bastion_name = "cg-stg-gcp-bastion-yang"
 service_account_name_bastion = "cg-stg-gcp-sa-bastion-yang"
 tags_bastion = ["bastion", "iap-access", "http-server", "https-server", "glb-class0", "glb-class1"]

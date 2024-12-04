@@ -162,7 +162,7 @@ variable "startup_script" {
 
 variable "subnet" {
   type = string
-  default = "cg-stg-bastion-subnet"
+  default = ""
   description = "Self link for the subnet on which the Bastion should live. Can be private when using IAP"
 }
 

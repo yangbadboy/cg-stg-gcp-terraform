@@ -233,3 +233,9 @@ variable "assign_static_ip" {
   description = "assign static to instance "
   default     = false
 }
+
+variable "subnet_bastion" {
+  type        = string
+  description = "subnet for bastion "
+  default     = ""
+}
