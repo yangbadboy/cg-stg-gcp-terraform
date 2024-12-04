@@ -123,6 +123,7 @@ variable "service_account_roles" {
     "roles/monitoring.metricWriter",
     "roles/monitoring.viewer",
     "roles/compute.osLogin",
+    "roles/storage.admin"
   ]
 }
 
