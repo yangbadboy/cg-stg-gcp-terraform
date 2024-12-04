@@ -32,7 +32,7 @@ terraform {
   }
 
     backend "gcs" {
-    bucket         = "cloudgame-stg-gcp-gcs"          # Tên bucket GCS
+    bucket         = "cg-stg-gcp-terraform-state-yang"          # Tên bucket GCS
     prefix         = "terraform/state-files"         # Đường dẫn thư mục lưu trữ state (có thể thay đổi)
 #    credentials    = "path/to/service-account.json"  # Đường dẫn file credentials cho Terraform
 #    filename       = "cloudgame-stg-gcp.tfstate"     # Tên file state
